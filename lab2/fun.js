@@ -11,8 +11,10 @@ const f3 = () => {
 };
 
 function main(){
-    console.log("main");
-    f1();
+    console.log("main");// javascript s
+    //setTimeout(f1,0);
+   // setInterval(f1,1000);
+    setImmediate(f1);
     f2();
     f3();
 console.log("end");
