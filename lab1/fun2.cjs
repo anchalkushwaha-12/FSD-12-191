@@ -1,4 +1,4 @@
-import { log } from "node:console";
+
 
 const f1 = () => {
   console.log("f1");
@@ -12,9 +12,9 @@ const f3 = () => {
 
 function main(){
     console.log("main");// javascript s
-    //setTimeout(f1,0);
+    setTimeout(f1,0);
    // setInterval(f1,1000);
-    setImmediate(f1);
+    setImmediate(f2);
     f2();
     f3();
 console.log("end");

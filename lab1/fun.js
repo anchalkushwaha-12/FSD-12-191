@@ -1,12 +1,23 @@
-const toWords =(digit)=>{
-    const words =["zero ","one","two","three","four","five","six","seven","eight","nine"];
-    return words[digit];
-}
+import { log } from "node:console";
 
-console.log(toWords(5));
-console.log(toWords(0));
-console.log(toWords(8));
-// frontend
-//angular,react,class,view
-//common in these :: html ,css(bootstap,tailwind,js)
-//backend-- nodejs,springboot,fast api,django,php
+const f1 = () => {
+  console.log("f1");
+};
+const f2 = () => {
+  console.log("f2");
+};
+const f3 = () => {
+  console.log("f3");
+};
+
+function main(){
+    console.log("main");// javascript s
+    setTimeout(f1,0);
+   // setInterval(f1,1000);
+    setImmediate(f2);
+    f2();
+    f3();
+    process.nextTick(f3);
+console.log("end");
+}
+main();
