@@ -6,3 +6,6 @@ fs modude direactly  communicate with operating system rather than wroser a comm
 4. watch-> watch,unwatch
 5. stream -> readsteam(),writestream()
 ## all function are promise so it must be call awake keyword
+# appendfile 
+1. it is to add
+# writeFile 
